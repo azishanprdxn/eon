@@ -1,0 +1,72 @@
+header {
+  background-color: $primary-color;
+  color: $white;
+
+  a { color: $white; }
+  
+  .flex-container {
+    @include flex;
+    @include wrap;
+
+    nav {
+      width: 58%;
+
+      @include responsive($desktop) {
+        width: 60%;
+      }
+      
+      @include responsive($notebook) {
+        width: 100%;
+      }
+
+      figure { display: inline-block; }
+
+      .nav-links {
+        display: inline-block;
+        vertical-align: middle;
+
+        li {
+          padding: 0 24px;
+
+          a {
+            &:hover { text-decoration: underline; }
+          }
+        }
+      }
+    }
+    .utilities {
+      width: 42%;
+      margin: auto 0;
+      text-align: end;
+      vertical-align: middle;
+
+      @include responsive($desktop) {
+        width: 40%;
+      }
+      
+      @include responsive($notebook) {
+        display: none;
+      }
+
+      li {
+        padding: 0 24px;
+        vertical-align: middle;
+
+        a {
+          &:hover { text-decoration: underline; }
+        }
+        
+        .manage {
+          display: block;
+          color: $yellow;
+        }
+
+        .fa-chevron-down {
+          padding-left: 10px;
+          position: absolute;
+          top:24px;
+        }
+      }
+    }
+  }
+}

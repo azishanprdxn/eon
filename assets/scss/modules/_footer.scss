@@ -1,0 +1,117 @@
+footer {
+  border-top: 5px solid $red;
+  background-color: $darkbg;
+  color: $white;
+
+  a { color: $white; }
+
+  .flex-container {
+    padding-top: 32px;
+    @include flex;
+    @include wrap;
+
+    .site-links {
+      width: 10%;
+      border-right: 1px solid $white;
+      margin-right: -1px;
+      ul {
+        padding: 0 24px;
+        li {
+          margin: 24px 0;
+          display: block;
+
+          a {
+            &:hover { text-decoration: underline; }
+          }
+        }
+      }
+    }
+
+    .socials {
+      width: 58%;
+      border-right: 1px solid $white;
+      margin-right: -1px;
+
+      P {
+        padding: 24px 24px 0 24px;
+      }
+
+      ul {
+        padding: 24px;
+
+        li {
+          margin: 0 24px;
+          font-size: $medium-large;
+
+          &:first-of-type { margin-left: 0; }
+
+          a {
+            &:hover { color: $red; }
+          }
+        }
+      }
+
+      a[title=Subscribe] {
+        padding: 0 24px 24px 24px;
+
+        &:hover { text-decoration: underline; }
+
+        span { margin-right: 12px; }
+      }
+    }
+
+    .other-links {
+      width: 32%;
+
+      ul {
+        padding: 0 24px;
+
+        li {
+          margin: 24px 0;
+          display: block;
+
+          a {
+            &:hover { text-decoration: underline; }
+          }
+        }
+      }
+    }
+
+    .published {
+      width: 100%;
+      padding: 42px 0;
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+      margin-top: 28px;
+
+      .content {
+        width: 37%;
+        margin: 0 auto;
+        text-align: center;
+
+        em { display: block; }
+      }
+    }
+
+    .policies {
+      width: 50%;
+      padding: 18px 0;
+
+      li {
+        margin: 0 8px;
+
+        &:first-of-type { margin-left: 0; }
+
+        a {
+          &:hover { text-decoration: underline; }
+        }
+      }
+    }
+
+    .copyright {
+      width: 50%;
+      padding: 18px 0;
+      text-align: end;
+    }
+  }
+}

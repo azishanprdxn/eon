@@ -1,0 +1,144 @@
+.about {
+  background-color: $lightgrey;
+
+  .wrapper { width: 82.2%; }
+
+  .flex-container {
+    padding-bottom: 60px;
+    @include flex;
+    @include wrap;
+
+    .flexbox-left {
+      width: 72.3%;
+      margin-bottom: 24px;
+      background-color: $white;
+
+      .background {
+        position: relative;
+
+        img { max-width: 100%; }
+
+        .play-btn {
+          max-width: 14%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          @include translate(-50%, -50%);
+          cursor: pointer;
+        }
+      }
+
+      .content__inner {
+        padding: 32px;
+
+        h2 {
+          padding: 4px 0;
+          color: $blue;
+          font-size: $large;
+        }
+
+        p {
+          padding: 24px 0;
+          font-size: $medium;
+          line-height: 1.4;
+        }
+
+        .social-links {
+          text-align: end;
+
+          ul {
+            padding: 24px 0;
+
+            li {
+              width: 40px;
+              padding: 12px;
+              border-radius: 50%;
+              background-color: $darkgrey;
+              font-size: $x-large;
+              cursor: pointer;
+
+              &:hover { background-color: $blue; }
+
+              &:first-of-type {
+                a { margin-right: 10px; }
+              }
+              
+              a {
+                margin-right: 3px;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .flexbox-right {
+      width: 27.7%;
+      background-color: $white;
+
+      .content {
+        padding-left: 24px;
+        padding-bottom: 24px;
+        background-color: $lightgrey;
+
+        .content__inner {
+          padding: 14px;
+          background-color: $white;
+
+          figure {
+            img { max-width: 24%; }
+          }
+
+          a {
+            padding: 16px 0;
+            color: $blue;
+            text-decoration: underline;
+
+            &:hover { color: $darkgrey; }
+          }
+
+          p {
+            font-size: $medium-small;
+            line-height: 1.4;
+          }
+        }
+
+        img { max-width: 100%; }
+
+        .background {
+          position: relative;
+
+          .play-btn {
+            max-width: 14%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include translate(-50%, -50%);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about__navigation {
+  p {
+    display: inline-block;
+    padding: 36px 0 22px 0;
+
+    a {
+      color: $blue;
+
+      &:hover { text-decoration: underline; }
+    }
+  }
+  figure {
+    padding: 12px;
+    margin: 18px 0 4px 0;
+    float: right;
+    background-color: $black;
+    cursor: pointer;
+  }
+}

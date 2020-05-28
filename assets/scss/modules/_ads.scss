@@ -1,0 +1,39 @@
+.ads {
+  .wrapper {
+    width: 82.2%;
+
+    .flex-container {
+      @include flex;
+      @include wrap;
+
+      .ad-link {
+        width: 50%;
+        padding: 26px 0;
+        font-size: $small;
+        font-weight: $bold;
+        text-transform: uppercase;
+
+        a {
+          color: $black;
+          text-decoration: underline;
+
+          span { padding-left: 5px; }
+
+          &:hover span {
+            padding-left: 12px;
+            @include transition(.2s);
+          }
+        }
+      }
+
+      .sponsor {
+        width: 50%;
+        margin: auto 0;
+        font-size: $small;
+        font-weight: $bold;
+        text-align: end;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

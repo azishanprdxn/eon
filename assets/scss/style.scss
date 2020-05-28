@@ -1,2 +1,8 @@
 @import './reset';
+@import './variables';
+@import './mixins';
 @import './common';
+@import './modules/header';
+@import './modules/ads';
+@import './modules/about';
+@import './modules/footer';

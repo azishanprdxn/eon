@@ -1,0 +1,35 @@
+@mixin flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+
+@mixin wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@mixin justify($align: center) {
+  -webkit-box-pack: $align;
+  -ms-flex-pack: $align;
+  justify-content: $align;
+}
+
+@mixin transition($seconds) {
+  -webkit-transition: $seconds;
+  -moz-transition: $seconds;
+  -o-transition: $seconds;
+  transition: $seconds;
+}
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+@mixin responsive($value) {
+  @media only screen and (max-width: $value) {
+    @content;
+  }
+}

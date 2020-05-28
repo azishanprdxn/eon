@@ -104,12 +104,368 @@ li {
 /* for wrapper */
 .wrapper {
   max-width: 1360px;
-  width: 86%;
+  width: 93.5%;
   margin: 0 auto;
 }
 
 img {
   width: auto;
+}
+
+header {
+  background-color: #383e42;
+  color: #fff;
+}
+header a {
+  color: #fff;
+}
+header .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+header .flex-container nav {
+  width: 58%;
+}
+@media only screen and (max-width: 1024px) {
+  header .flex-container nav {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 995px) {
+  header .flex-container nav {
+    width: 100%;
+  }
+}
+header .flex-container nav figure {
+  display: inline-block;
+}
+header .flex-container nav .nav-links {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .flex-container nav .nav-links li {
+  padding: 0 24px;
+}
+header .flex-container nav .nav-links li a:hover {
+  text-decoration: underline;
+}
+header .flex-container .utilities {
+  width: 42%;
+  margin: auto 0;
+  text-align: end;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 1024px) {
+  header .flex-container .utilities {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 995px) {
+  header .flex-container .utilities {
+    display: none;
+  }
+}
+header .flex-container .utilities li {
+  padding: 0 24px;
+  vertical-align: middle;
+}
+header .flex-container .utilities li a:hover {
+  text-decoration: underline;
+}
+header .flex-container .utilities li .manage {
+  display: block;
+  color: #bea537;
+}
+header .flex-container .utilities li .fa-chevron-down {
+  padding-left: 10px;
+  position: absolute;
+  top: 24px;
+}
+
+.ads .wrapper {
+  width: 82.2%;
+}
+.ads .wrapper .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.ads .wrapper .flex-container .ad-link {
+  width: 50%;
+  padding: 26px 0;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.ads .wrapper .flex-container .ad-link a {
+  color: #000;
+  text-decoration: underline;
+}
+.ads .wrapper .flex-container .ad-link a span {
+  padding-left: 5px;
+}
+.ads .wrapper .flex-container .ad-link a:hover span {
+  padding-left: 12px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.ads .wrapper .flex-container .sponsor {
+  width: 50%;
+  margin: auto 0;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: end;
+  text-transform: uppercase;
+}
+
+.about {
+  background-color: #f6f6f7;
+}
+.about .wrapper {
+  width: 82.2%;
+}
+.about .flex-container {
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.about .flex-container .flexbox-left {
+  width: 72.3%;
+  margin-bottom: 24px;
+  background-color: #fff;
+}
+.about .flex-container .flexbox-left .background {
+  position: relative;
+}
+.about .flex-container .flexbox-left .background img {
+  max-width: 100%;
+}
+.about .flex-container .flexbox-left .background .play-btn {
+  max-width: 14%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.about .flex-container .flexbox-left .content__inner {
+  padding: 32px;
+}
+.about .flex-container .flexbox-left .content__inner h2 {
+  padding: 4px 0;
+  color: #21677d;
+  font-size: 30px;
+}
+.about .flex-container .flexbox-left .content__inner p {
+  padding: 24px 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.about .flex-container .flexbox-left .content__inner .social-links {
+  text-align: end;
+}
+.about .flex-container .flexbox-left .content__inner .social-links ul {
+  padding: 24px 0;
+}
+.about .flex-container .flexbox-left .content__inner .social-links ul li {
+  width: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #949494;
+  font-size: 34px;
+  cursor: pointer;
+}
+.about .flex-container .flexbox-left .content__inner .social-links ul li:hover {
+  background-color: #21677d;
+}
+.about .flex-container .flexbox-left .content__inner .social-links ul li:first-of-type a {
+  margin-right: 10px;
+}
+.about .flex-container .flexbox-left .content__inner .social-links ul li a {
+  margin-right: 3px;
+  color: #fff;
+}
+.about .flex-container .flexbox-right {
+  width: 27.7%;
+  background-color: #fff;
+}
+.about .flex-container .flexbox-right .content {
+  padding-left: 24px;
+  padding-bottom: 24px;
+  background-color: #f6f6f7;
+}
+.about .flex-container .flexbox-right .content .content__inner {
+  padding: 14px;
+  background-color: #fff;
+}
+.about .flex-container .flexbox-right .content .content__inner figure img {
+  max-width: 24%;
+}
+.about .flex-container .flexbox-right .content .content__inner a {
+  padding: 16px 0;
+  color: #21677d;
+  text-decoration: underline;
+}
+.about .flex-container .flexbox-right .content .content__inner a:hover {
+  color: #949494;
+}
+.about .flex-container .flexbox-right .content .content__inner p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.about .flex-container .flexbox-right .content img {
+  max-width: 100%;
+}
+.about .flex-container .flexbox-right .content .background {
+  position: relative;
+}
+.about .flex-container .flexbox-right .content .background .play-btn {
+  max-width: 14%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.about__navigation p {
+  display: inline-block;
+  padding: 36px 0 22px 0;
+}
+.about__navigation p a {
+  color: #21677d;
+}
+.about__navigation p a:hover {
+  text-decoration: underline;
+}
+.about__navigation figure {
+  padding: 12px;
+  margin: 18px 0 4px 0;
+  float: right;
+  background-color: #000;
+  cursor: pointer;
+}
+
+footer {
+  border-top: 5px solid #e3120b;
+  background-color: #121212;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+footer .flex-container {
+  padding-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+footer .flex-container .site-links {
+  width: 10%;
+  border-right: 1px solid #fff;
+  margin-right: -1px;
+}
+footer .flex-container .site-links ul {
+  padding: 0 24px;
+}
+footer .flex-container .site-links ul li {
+  margin: 24px 0;
+  display: block;
+}
+footer .flex-container .site-links ul li a:hover {
+  text-decoration: underline;
+}
+footer .flex-container .socials {
+  width: 58%;
+  border-right: 1px solid #fff;
+  margin-right: -1px;
+}
+footer .flex-container .socials P {
+  padding: 24px 24px 0 24px;
+}
+footer .flex-container .socials ul {
+  padding: 24px;
+}
+footer .flex-container .socials ul li {
+  margin: 0 24px;
+  font-size: 20px;
+}
+footer .flex-container .socials ul li:first-of-type {
+  margin-left: 0;
+}
+footer .flex-container .socials ul li a:hover {
+  color: #e3120b;
+}
+footer .flex-container .socials a[title=Subscribe] {
+  padding: 0 24px 24px 24px;
+}
+footer .flex-container .socials a[title=Subscribe]:hover {
+  text-decoration: underline;
+}
+footer .flex-container .socials a[title=Subscribe] span {
+  margin-right: 12px;
+}
+footer .flex-container .other-links {
+  width: 32%;
+}
+footer .flex-container .other-links ul {
+  padding: 0 24px;
+}
+footer .flex-container .other-links ul li {
+  margin: 24px 0;
+  display: block;
+}
+footer .flex-container .other-links ul li a:hover {
+  text-decoration: underline;
+}
+footer .flex-container .published {
+  width: 100%;
+  padding: 42px 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  margin-top: 28px;
+}
+footer .flex-container .published .content {
+  width: 37%;
+  margin: 0 auto;
+  text-align: center;
+}
+footer .flex-container .published .content em {
+  display: block;
+}
+footer .flex-container .policies {
+  width: 50%;
+  padding: 18px 0;
+}
+footer .flex-container .policies li {
+  margin: 0 8px;
+}
+footer .flex-container .policies li:first-of-type {
+  margin-left: 0;
+}
+footer .flex-container .policies li a:hover {
+  text-decoration: underline;
+}
+footer .flex-container .copyright {
+  width: 50%;
+  padding: 18px 0;
+  text-align: end;
 }
 
 /*# sourceMappingURL=style.css.map */
